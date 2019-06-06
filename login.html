@@ -5,7 +5,11 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -20,7 +24,7 @@
             <div class="card-panel">
             <div class="row">
               <div class="center-align">
-                <img src="../img/logo.png" width="125px" alt="">
+                <img src="./img/logo.png" width="125px" alt="">
                 <h3 class="teal-text text-darken-3">CREALIT</h3>
               </div>
               <div class="input-field col s12">
@@ -32,7 +36,11 @@
                 <label class="teal-text text-darken-3" for="">Senha</label>
               </div>
               <div class="input-field col s12">
-                <span>Não possui conta? <a href="#">Clique aqui!</a></span>
+                <span>Não possui conta? 
+                  <div class="popup" onclick="myFunction()"><a>Clique aqui!</a>
+                    <span class="popuptext" id="myPopup"><a href="./doscente/cadastroDiscente.html">Professor</a><br><a href="./discente/cadastroDiscente.html">Aluno</a></span>
+                  </div>
+                </span>
               </div>
             </div>
             <div class="row center-align">
@@ -43,6 +51,10 @@
         </div>
       </div>
     </div>
-    <script src="../js/materialize.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>
+
