@@ -16,6 +16,16 @@
       <div class="container">
         <div class="container">
           <div class="container">
+
+            <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
             <br>
             <div class="card-panel">
             <div class="row">
@@ -32,7 +42,11 @@
                 <label class="teal-text text-darken-3" for="">Senha</label>
               </div>
               <div class="input-field col s12">
-                <span>Não possui conta? <a href="#">Clique aqui!</a></span>
+                <span>Não possui conta? 
+                  <div class="popup" onclick="myFunction()"><a>Clique aqui!</a>
+                    <span class="popuptext" id="myPopup"><a href="./doscente/cadastroDiscente.html">Professor</a><br><a href="./discente/cadastroDiscente.html">Aluno</a></span>
+                  </div>
+                </span>
               </div>
             </div>
             <div class="row center-align">
@@ -43,6 +57,10 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../js/materialize.js"></script>
+    <script src="../js/init.js"></script>
     <script src="../js/materialize.min.js"></script>
+
   </body>
 </html>
